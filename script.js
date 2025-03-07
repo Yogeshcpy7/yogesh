@@ -449,85 +449,85 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // service slide
-// const slides = document.querySelectorAll('.slide');
-// const dots = document.querySelectorAll('.dot');
-// let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+let currentIndex = 0;
 
-// // Function to show the active slide
-// function showSlide(index) {
-//   slides.forEach((slide, i) => {
-//     slide.style.transform = `translateX(-${index * 100}%)`; // Moves the slide horizontally
-//     dots[i].classList.remove('active'); // Remove active class from all dots
-//   });
-//   dots[index].classList.add('active'); // Add active class to the current dot
-// }
+// Function to show the active slide
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.style.transform = `translateX(-${index * 100}%)`; // Moves the slide horizontally
+    dots[i].classList.remove('active'); // Remove active class from all dots
+  });
+  dots[index].classList.add('active'); // Add active class to the current dot
+}
 
-// // Automatically go to the next slide
-// function nextSlide() {
-//   currentIndex = (currentIndex + 1) % slides.length; // Loop back to the first slide when at the last one
-//   showSlide(currentIndex);
-// }
+// Automatically go to the next slide
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % slides.length; // Loop back to the first slide when at the last one
+  showSlide(currentIndex);
+}
 
-// // Event Listener for the dots
-// dots.forEach((dot, index) => {
-//   dot.addEventListener('click', () => {
-//     currentIndex = index; // Set currentIndex to the dot's index
-//     showSlide(currentIndex);
-//   });
-// });
+// Event Listener for the dots
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    currentIndex = index; // Set currentIndex to the dot's index
+    showSlide(currentIndex);
+  });
+});
 
-// // Start the carousel auto-sliding
-// setInterval(nextSlide, 8000); // Change slide every 3 seconds
+// Start the carousel auto-sliding
+setInterval(nextSlide, 3000); // Change slide every 3 seconds
 
 
-// //services page 
-// const carouselWrapper = document.getElementById('carouselWrapper');
-// const prev = document.getElementById('prev');
-// const next = document.getElementById('next');
-// let currentSlide = 0;
+//services page 
+const carouselWrapper = document.getElementById('carouselWrapper');
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
+let currentSlide = 0;
 
-// function updateCarousel() {
-//     const cardWidth = document.querySelector('.card').offsetWidth;
-//     const offset = -currentSlide * cardWidth;
-//     carouselWrapper.style.transform = `translateX(${offset}px)`;
-// }
+function updateCarousel() {
+    const cardWidth = document.querySelector('.card').offsetWidth;
+    const offset = -currentSlide * cardWidth;
+    carouselWrapper.style.transform = `translateX(${offset}px)`;
+}
 
-// prev.addEventListener('click', () => {
-//     currentSlide = (currentSlide > 0) ? currentSlide - 1 : totalSlides - 1;
-//     updateCarousel();
-// });
+prev.addEventListener('click', () => {
+    currentSlide = (currentSlide > 0) ? currentSlide - 1 : totalSlides - 1;
+    updateCarousel();
+});
 
-// next.addEventListener('click', () => {
-//     currentSlide = (currentSlide < totalSlides - 1) ? currentSlide + 1 : 0;
-//     updateCarousel();
-// });
+next.addEventListener('click', () => {
+    currentSlide = (currentSlide < totalSlides - 1) ? currentSlide + 1 : 0;
+    updateCarousel();
+});
 
-// const totalSlides = document.querySelectorAll('.card').length;
-// window.addEventListener('resize', updateCarousel);
-// updateCarousel();
-// //gallery 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const dropdownLinks = document.querySelectorAll(".dropdown-menu a");
-//   const content = document.getElementById("content");
+const totalSlides = document.querySelectorAll('.card').length;
+window.addEventListener('resize', updateCarousel);
+updateCarousel();
+//gallery 
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownLinks = document.querySelectorAll(".dropdown-menu a");
+  const content = document.getElementById("content");
 
-//   // Content for each section
-//   const sections = {
-//       civil: "<h1>Civil Segment</h1><p>Information about Civil Segment...</p>",
-//       peb: "<h1>PEB</h1><p>Information about Pre-Engineered Buildings...</p>",
-//       steel: "<h1>Steel Building</h1><p>Details about Steel Buildings...</p>",
-//       tensile: "<h1>Tensile</h1><p>Details about Tensile structures...</p>",
-//       skylight: "<h1>Skylight</h1><p>Information about Skylight installations...</p>",
-//   };
+  // Content for each section
+  const sections = {
+      civil: "<h1>Civil Segment</h1><p>Information about Civil Segment...</p>",
+      peb: "<h1>PEB</h1><p>Information about Pre-Engineered Buildings...</p>",
+      steel: "<h1>Steel Building</h1><p>Details about Steel Buildings...</p>",
+      tensile: "<h1>Tensile</h1><p>Details about Tensile structures...</p>",
+      skylight: "<h1>Skylight</h1><p>Information about Skylight installations...</p>",
+  };
 
-//   // Click event for dropdown items
-//   dropdownLinks.forEach(link => {
-//       link.addEventListener("click", function (event) {
-//           event.preventDefault(); // Prevent page reload
-//           const section = this.getAttribute("data-section1");
-//           content.innerHTML = sections[section] || "<h1>Welcome</h1><p>Select a category.</p>";
-//       });
-//   });
-// });
+  // Click event for dropdown items
+  dropdownLinks.forEach(link => {
+      link.addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent page reload
+          const section = this.getAttribute("data-section1");
+          content.innerHTML = sections[section] || "<h1>Welcome</h1><p>Select a category.</p>";
+      });
+  });
+});
 
 
 

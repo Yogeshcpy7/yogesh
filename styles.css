@@ -25,6 +25,7 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 1;
 }
 
 .logo {
@@ -351,4 +352,11 @@ h2 {
 
 .dot.active {
   background: orange;
+}
+.footer {
+  text-align: center;
+  padding-top: 20px;
+  background-color: black;
+  color: white;
+  height: 50px;
 }

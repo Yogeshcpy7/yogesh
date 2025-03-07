@@ -11,59 +11,72 @@ document.addEventListener("DOMContentLoaded", function () {
   // Image gallery content
   const galleryImages = {
       civil: [
-          "image1.jpg",
-          "image2.avif",
-          "image3.jpg",
+        
           "skybuilding/civil1.jpeg",
           "skybuilding/civil2.jpeg",
           "skybuilding/civil3.jpeg",
-          "image1.jpg",
-          "image2.avif",
-          "image3.jpg"
+          "skybuilding/c1.jpeg",
+          "skybuilding/c2.jpeg",
+          "skybuilding/c3.jpeg",
+          "skybuilding/c4.jpeg",
+          "skybuilding/c5.jpeg",
+         
       ],
       peb: [
         "skybuilding/peb/peb1.jpeg",
         "skybuilding/peb/peb2.jpeg",
         "skybuilding/peb/peb3.jpeg",
         "skybuilding/peb/peb4.jpeg",
-        "image2.avif",
         "skybuilding/peb/peb5.jpeg",
         "image1.jpg",
         "skybuilding/peb/peb1.jpeg",
         "image3.jpg"
       ],
       steel: [
-        "image1.jpg",
-        "image2.avif",
-        "image3.jpg",
-        "image1.jpg",
-        "image2.avif",
-        "image3.jpg",
-        "image1.jpg",
-        "image2.avif",
-        "image3.jpg"
+        "skybuilding/steelbuilding/1.jpeg",
+        "skybuilding/steelbuilding/2.jpeg",
+        "skybuilding/steelbuilding/3.jpeg",
+        "skybuilding/steelbuilding/4.jpeg",
+        "skybuilding/steelbuilding/5.jpeg",
+        "skybuilding/steelbuilding/6.jpeg",
+        "skybuilding/steelbuilding/7.jpeg",
+        "skybuilding/steelbuilding/1.jpeg",
+        "skybuilding/steelbuilding/2.jpeg",
+        "skybuilding/steelbuilding/3.jpeg",
+       
       ],
       tensile: [
-          "skybuilding/tensile/tensile1.jpeg",
-          "skybuilding/tensile/tensile2.jpeg",
-          "skybuilding/tensile/tensile3.jpeg",
-          "skybuilding/tensile/tensile1.jpeg",
-          "skybuilding/tensile/tensile2.jpeg",
+          "skybuilding/tensile/t1.jpeg",
+          "skybuilding/tensile/t2.jpeg",
+          "skybuilding/tensile/t3.jpeg",
+          "skybuilding/tensile/t4.jpeg",
+          "skybuilding/tensile/t5.jpeg",
+          "skybuilding/tensile/t6.jpeg",
+          "skybuilding/tensile/t7.jpeg",
+          "skybuilding/tensile/t3.jpeg",
           "skybuilding/tensile/tensile3.jpeg",
           "skybuilding/tensile/tensile4.jpeg",
-          "skybuilding/tensile/tensile5.jpeg",
-          "skybuilding/tensile/tensile4.jpeg",
-          "skybuilding/tensile/tensile5.jpeg",
       ],
       skylight: [
         "skybuilding/skylights/sky1.jpeg",
         "skybuilding/skylights/sky2.jpeg",
         "skybuilding/skylights/sky3.jpeg",
         "skybuilding/skylights/sky4.jpeg",
-        "skybuilding/skylights/sky1.jpeg",
-        "skybuilding/skylights/sky2.jpeg",
-        "skybuilding/skylights/sky3.jpeg",
-        "skybuilding/skylights/sky4.jpeg"
+        "skybuilding/skylights/s1.jpeg",
+        "skybuilding/skylights/s2.jpeg",
+        "skybuilding/skylights/s3.jpeg",
+        "skybuilding/skylights/s4.jpeg",
+        "skybuilding/skylights/s5.jpeg",
+      ],
+      architecture: [
+        "skybuilding/architecture/a1.jpeg",
+        "skybuilding/architecture/a2.jpeg",
+        "skybuilding/architecture/a4.jpeg",
+        "skybuilding/architecture/a3.jpeg",
+        "skybuilding/architecture/a5.jpeg",
+        "skybuilding/architecture/a6.jpeg",
+        "skybuilding/architecture/a4.jpeg",
+        "skybuilding/architecture/a1.jpeg"
       ],
   };
 
@@ -182,24 +195,25 @@ document.addEventListener("DOMContentLoaded", function () {
 </head>
 <body>
 
-<h1>Our Services</h1>
+<h3>Reliable | Efficeint | Innovative construction Services </h3>
 
 <div class="card-container">
   <!-- Card 1 -->
   <div class="card">
       <img src="image1.jpg" alt="Service 1">
       <div class="card-content">
-          <h3>Service 1</h3>
-          <p>High-quality steel manufacturing for industrial use.</p>
+          <h3>PEB</h3>
+          <p>Pre-Engineered Buildings (PEBs) are factory-made steel structures
+          that are fabricated off-site and assembled on-site.</p>
           <a href="preEngineering.html" target="_self" class="btn">More</a>
       </div>
   </div>
 
   <!-- Card 2 -->
   <div class="card">
-      <img src="image2.avif" alt="Service 2">
+      <img src="skybuilding/peb/peb1.jpeg" alt="Service 2">
       <div class="card-content">
-          <h3>Service 2</h3>
+          <h3>WareHouse</h3>
           <p>Advanced engineering solutions for large projects.</p>
           <a href="warehouse.html" class="btn">More</a>
       </div>
@@ -207,40 +221,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
   <!-- Card 3 -->
   <div class="card">
-      <img src="image3.jpg" alt="Service 3">
+      <img src="skybuilding/architecture/a2.jpeg" alt="Service 3">
       <div class="card-content">
-          <h3>Service 3</h3>
-          <p>Eco-friendly and sustainable steel solutions.</p>
-          <a href="#" class="btn">More</a>
+          <h3>Architecture</h3>
+          <p>Innovative Architectural Designs for Modern Infrastructure.</p>
+          <a href="architecture.html" class="btn">More</a>
       </div>
       
   </div>
   <div class="card">
-  <img src="image1.jpg" alt="Service 1">
+  <img src="skybuilding/tensile/t6.jpeg" alt="Service 1">
   <div class="card-content">
-      <h3>Service 1</h3>
-      <p>High-quality steel manufacturing for industrial use.</p>
-      <a href="#" class="btn">More</a>
+      <h3>Tensile</h3>
+      <p>Tensile stength timeless structures</p>
+      <a href="tensile.html" class="btn">More</a>
   </div>
 </div>
 
 <!-- Card 2 -->
 <div class="card">
-  <img src="image2.avif" alt="Service 2">
+  <img src="skybuilding/skylights/s3.jpeg" alt="Service 2">
   <div class="card-content">
-      <h3>Service 2</h3>
-      <p>Advanced engineering solutions for large projects.</p>
-      <a href="#" class="btn">More</a>
+      <h3>Skybuilding</h3>
+      <p>Elevation dreams, one floor at a time.</p>
+      <a href="skybuilding.html" class="btn">More</a>
   </div>
-</div>
-<!-- Card 3 -->
-<div class="card">
-  <img src="image3.jpg" alt="Service 3">
-  <div class="card-content">
-      <h3>Service 3</h3>
-      <p>Eco-friendly and sustainable steel solutions.</p>
-      <a href="#" class="btn">More</a>
-  </div> 
 </div>
 </div>
 </body>
@@ -444,3 +449,86 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // service slide
+// const slides = document.querySelectorAll('.slide');
+// const dots = document.querySelectorAll('.dot');
+// let currentIndex = 0;
+
+// // Function to show the active slide
+// function showSlide(index) {
+//   slides.forEach((slide, i) => {
+//     slide.style.transform = `translateX(-${index * 100}%)`; // Moves the slide horizontally
+//     dots[i].classList.remove('active'); // Remove active class from all dots
+//   });
+//   dots[index].classList.add('active'); // Add active class to the current dot
+// }
+
+// // Automatically go to the next slide
+// function nextSlide() {
+//   currentIndex = (currentIndex + 1) % slides.length; // Loop back to the first slide when at the last one
+//   showSlide(currentIndex);
+// }
+
+// // Event Listener for the dots
+// dots.forEach((dot, index) => {
+//   dot.addEventListener('click', () => {
+//     currentIndex = index; // Set currentIndex to the dot's index
+//     showSlide(currentIndex);
+//   });
+// });
+
+// // Start the carousel auto-sliding
+// setInterval(nextSlide, 8000); // Change slide every 3 seconds
+
+
+// //services page 
+// const carouselWrapper = document.getElementById('carouselWrapper');
+// const prev = document.getElementById('prev');
+// const next = document.getElementById('next');
+// let currentSlide = 0;
+
+// function updateCarousel() {
+//     const cardWidth = document.querySelector('.card').offsetWidth;
+//     const offset = -currentSlide * cardWidth;
+//     carouselWrapper.style.transform = `translateX(${offset}px)`;
+// }
+
+// prev.addEventListener('click', () => {
+//     currentSlide = (currentSlide > 0) ? currentSlide - 1 : totalSlides - 1;
+//     updateCarousel();
+// });
+
+// next.addEventListener('click', () => {
+//     currentSlide = (currentSlide < totalSlides - 1) ? currentSlide + 1 : 0;
+//     updateCarousel();
+// });
+
+// const totalSlides = document.querySelectorAll('.card').length;
+// window.addEventListener('resize', updateCarousel);
+// updateCarousel();
+// //gallery 
+// document.addEventListener("DOMContentLoaded", function () {
+//   const dropdownLinks = document.querySelectorAll(".dropdown-menu a");
+//   const content = document.getElementById("content");
+
+//   // Content for each section
+//   const sections = {
+//       civil: "<h1>Civil Segment</h1><p>Information about Civil Segment...</p>",
+//       peb: "<h1>PEB</h1><p>Information about Pre-Engineered Buildings...</p>",
+//       steel: "<h1>Steel Building</h1><p>Details about Steel Buildings...</p>",
+//       tensile: "<h1>Tensile</h1><p>Details about Tensile structures...</p>",
+//       skylight: "<h1>Skylight</h1><p>Information about Skylight installations...</p>",
+//   };
+
+//   // Click event for dropdown items
+//   dropdownLinks.forEach(link => {
+//       link.addEventListener("click", function (event) {
+//           event.preventDefault(); // Prevent page reload
+//           const section = this.getAttribute("data-section1");
+//           content.innerHTML = sections[section] || "<h1>Welcome</h1><p>Select a category.</p>";
+//       });
+//   });
+// });
+
+
+
+
